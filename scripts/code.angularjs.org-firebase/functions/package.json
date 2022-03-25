@@ -4,7 +4,13 @@
   "dependencies": {
     "@google-cloud/storage": "^1.1.1",
     "firebase-admin": "^5.11.0",
-    "firebase-functions": "^1.0.4"
+    "firebase-functions": "^1.0.4",
+    "@snyk/protect": "latest"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
